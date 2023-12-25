@@ -71,7 +71,7 @@ class DBStorage:
 
     def save(self):
         """commit all changes of the current database session"""
-        self.session.commit()
+        self.__session.commit()
 
     def reload(self):
         """Loads storage database"""
