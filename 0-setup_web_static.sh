@@ -23,7 +23,7 @@ fi
 sudo ln -s "$target_path" "$link_path"
 
 # Give ownership of the /data/ folder to the ubuntu user
-sudo chown -R ubuntu:ubuntu /data/
+sudo chown -hR ubuntu:ubuntu /data/
 
 # add the new location block to the server configuration
 sudo sed -i '38i\\tlocation /hbnb_static/ {\n\t\talias /data/web_static/current/;\n\t}\n' /etc/nginx/sites-available/default
