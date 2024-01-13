@@ -16,6 +16,7 @@ env.hosts = ['100.24.253.52', '52.86.163.192']
 
 
 def deploy():
+    '''creates and distributes an archive to your web servers'''
     archive_path = do_pack()
     if archive_path is None:
         return False
