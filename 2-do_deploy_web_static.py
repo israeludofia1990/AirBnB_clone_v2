@@ -14,7 +14,7 @@ def do_deploy(archive_path):
     '''distributes an archive to my web servers'''
     if exists(archive_path):
         file_name = archive_path.split('/')[-1]
-        file_name_no_ext =  file_name.split('.')[0]
+        file_name_no_ext = file_name.split('.')[0]
         path = "/data/web_static/releases/"
         try:
             put(archive_path, '/tmp/')
