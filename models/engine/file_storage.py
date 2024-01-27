@@ -64,3 +64,8 @@ class FileStorage:
             '''Delete the object from the __objects dictionary
             using the generated key'''
             del FileStorage.__objects[key]
+
+
+    def close(self):
+        '''Calls the reload method.'''
+        self.reload()
